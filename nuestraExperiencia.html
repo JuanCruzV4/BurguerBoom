@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BurguerBoom</title>
+    <link rel="shortcut icon" href="./imagenes/hamburguesa5.png" type="image/x-icon">
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href=""><img class="navbar" id="logoh" width="50" src="./imagenes/hamburguesa5.png" alt=""></a>
+            <div><h1 id="navTittle">BurgerBoom</h1></div>
+            <!--<h4 id="eslogan">~que feliz nos hace la comida~</h4>-->
+            
+               <a  class="navbar" href="./index.html">HOME</a>
+               <a  class="navbar" href="./nosotros.html">NOSOTROS</a>
+               <a  class="navbar" href="./nuestraExperiencia.html">NUESTRA EXPERIENCIA</a>
+               <a  class="navbar" id="Contacto" href="./contacto.html">CONTACTO</a>
+               
+               
+        </nav>
+    </header>
+    <main>
+
+        <div id="app">
+            <div v-for="elemento in restaurantes">
+                <div class="producto">
+                        <img :src="elemento.imagen" :alt="elemento.nombre">
+                          <div class="textocard">
+                                <a id="nombretarjeta" v-bind:href="elemento.sitio" target="_blank">{{elemento.nombre}}</a>
+                                <br>
+                                <a id="linkmapa" v-bind:href="elemento.mapa" target="_blank">{{elemento.direccion}}</a>
+                                <br>
+                                <p>Estrellas: {{elemento.estrellas}}</p>
+                                <br>
+                                <a id="botoncard" href="./CasaHamburguesa.html">Visitar</a>
+                                <br>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            
+    
+
+    </main>
+    <footer>
+        <nav>
+            <a href="https://api.whatsapp.com/send/?phone=3413479982" target="_blank"><img width="30" src="./imagenes/whatsapp.png" alt="WhastApp Logo" ></a>
+            <a href="https://www.instagram.com/ronnieburgers/" target="_blank"><img width="30" src="./imagenes/instagram.png" alt="Instagram Logo"></a>
+            <a href="https://www.facebook.com/enjoyRonnie" target="_blank"><img width="30" src="./imagenes/facebook.png" alt="Facebook Logo"></a>
+            <a href="mailto:juancruz.vazquez87@hotmail.com" target="_blank"><img width="30" src="./imagenes/gmail.png" alt="Mail Logo"></a>
+        </nav>
+    </footer>
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/Restaurantes.js"></script>
+</body>
+
+</html>

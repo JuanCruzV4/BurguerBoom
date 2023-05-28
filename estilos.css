@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Velocista;
+    src: url(./fuentes/Velocista-Demo-FFP.ttf);
+}
+@font-face {
+    font-family: Lato;
+    src: url(./fuentes/Lato-Regular.ttf);
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    /*position: fixed; /*sacar*/
+    width: 100%;
+}
+
+nav {
+    text-align: center;   
+}
+
+
+.navbar {
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    display: inline-block !important ;
+    padding: 15px 15px 15px 15px !important;
+    margin: 0px;
+    text-decoration: none !important; 
+    font-family: Lato;
+
+}
+
+ .navbar:hover{
+    color: #c2c2c2;
+}
+.navbar a{
+    display: inline-block !important;
+}
+#logoh{
+    padding: 1px 1px 1px 1px !important;
+}
+
+#logoh:hover{
+    width: 52px ;
+}
+
+#eslogan {
+    color: azure;
+    font-family: cursive;
+    padding: 15px;
+}
+
+#navTittle {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-family: Velocista;
+    margin: 1px;
+    
+
+}
+#homenav{
+    --animate-duration: 0.5s;
+}
+#nosotrosnav{
+    --animate-duration: 1s;
+}
+#nuestraexperiencianav{
+    --animate-duration: 1.5s;
+}
+#contactonav{
+    --animate-duration: 2s;
+}
+
+body {
+    background-image: url(./imagenes/8bd11b7ad7a580063529e16adbe9e6e9.jpg);
+    background-repeat: repeat;
+    position: relative;
+    padding-bottom: 5em;
+    min-height: 100vh;
+}
+
+footer {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+a:link {
+    color: rgb(255, 255, 255);
+}
+
+a:active {
+    color: rgb(190, 0, 0);
+}
+p::selection{
+    background-color: #f59705;
+}
+
+
+#home{
+display: flex;
+justify-content: flex-end;
+}
+
+#hb{
+    height: 600px;
+}
+
+#tx{
+    height: 650px;
+}
+
+#contenedor p {
+    padding: 10px 0px;
+}
+
+
+footer nav{
+    align-items: center;
+    padding: 15px;
+    margin: 0px;
+}
+footer a {
+    text-decoration: none;
+    padding: 15px;
+}
+
+
+.producto:hover{
+   transform: scale(1.10);
+   transition: width 0.3s, height 0.3s;
+   transition-timing-function: ease;
+}
+
+#botoncard{
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        background-color: black;
+        padding: 8px;
+        margin: 5px;
+        border-radius: 10px;
+        display: inline-block;
+}
+
+#app{
+
+    display: flex;
+    flex-direction: row-reverse;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+
+.producto{
+    width: 250px;
+    height: 380px;
+    border: 1.5px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 8px #000000;
+    margin: 25px;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+.producto img{
+    max-height: 200px;
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+}
+
+
+.textocard{
+    padding: 10px;
+    max-width: 90%;
+    height: 150px;
+    text-align: center;
+    
+    
+  
+}
+
+#linkmapa{
+    text-decoration: none;
+    color: white;
+}
+
+#nombretarjeta{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    
+    
+}
+.producto h2{
+    
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        text-decoration: none;
+        padding: 8px;
+        margin: 5px;
+        border-radius: 10px;
+        display: inline-block;
+}
+.producto p{
+    
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#imagenindex{
+ text-align: center;
+ width: 100%;
+ margin-bottom: 0px;
+ background-image: url(./imagenes/fondoimagen2.jpg);
+min-height: 80vh;
+}
+
+#imagenindex img{
+    align-content: center;
+    width: 100%;
+}
+
+#boton2{
+    border: 2px solid #ff6a00; /*anchura, estilo y color borde*/
+    box-shadow:  0 0 10px #000000;
+    padding: 10px 10px 10px 10px; /*espacio alrededor texto*/
+    background-color:rgb(255, 255, 255); /*color botón*/
+    top: 95vh;
+    left: 2vw;
+    position: absolute;
+    border-radius: 50px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #ff6a00;
+    font-weight: bold;
+    line-height: 20px;
+    z-index: 1;
+}
+
+ #boton2 img{
+    width: 45px; 
+ }
+
+
+ #boton2:hover{
+    border: 2px solid #ffffff; /*anchura, estilo y color borde*/
+    color: #ffffff;
+    background-color: #000000;
+    
+ }
+
+#quienessomos{
+    text-align: left;
+    background-color: #f59705;
+    background-repeat: repeat;
+    border: 3px solid #e70000;
+    border-radius: 20px;
+    box-shadow: 0 0 7px #000000;
+    margin: 30px;
+    padding: 30px;
+    height: 100%;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 23px;
+}
+#quienessomos p{
+    padding: 10px;
+
+}
+.abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+  
+
+.contenedorCH div{
+    text-align: center;
+    margin: 10px;
+}
+
+.subcontenedor{
+    display: inline;
+    text-align: center;
+
+}
+
+.form {
+    width: 450px;
+
+    font-size: 25px;
+    color: rgba(82, 243, 19, 0.904);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1px; 
+    background-color: gainsboro;
+
+}
+
+  /*Media Querys*/
+   /* Extra small devices (600px and down) */
+   @media only screen and (max-width: 600px) {
+    .navbar{
+        display: block !important;
+    }
+    .producto{
+        width: 320px;
+        height: 440px;
+    }
+    #boton2{
+        top: 100vh;
+        left: 44vw;
+    }
+    #navTittle{
+        color: #ff6a00;
+    }
+
+}
+
+/* Small devices (600px and up) */
+@media only screen and (min-width: 600px) {
+    #boton2{
+        top: 90vh;
+        left: 2vw;
+    }
+    .producto{
+        width: 300px;
+        height: 380px;
+    }
+    #navTittle{
+        color: #ff6a00;
+    }
+}
+
+/* Medium devices (768px and up) */
+@media only screen and (min-width: 768px) {
+    #boton2{
+        top: 90vh;
+        left: 2vw;
+    }
+    #navTittle{
+        color: #fff200;
+    }
+}
+
+/* Large devices (992px and up) */
+@media only screen and (min-width: 992px) {
+    #boton2{
+        top: 90vh;
+        left: 2vw;
+    }
+    #navTittle{
+        color: rgb(255, 255, 255);
+    }
+
+}
+
+#form{
+    display: flex;
+    border: 3px solid #f59705;
+    border-radius: 20px;
+    box-shadow: 0 0 9px #000000;
+    background-color: #DCDCDC;
+    margin: 70px;
+    padding: 15px;
+}
+
+#formtitle{
+   color: #ffffff;
+   font-weight: bold;
+   background-color: #f59705;
+}
+
+.labels{
+    color: #f59705;  
+}
